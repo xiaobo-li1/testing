@@ -7,6 +7,7 @@ library("ComplexHeatmap")
 library(circlize)
 
 set.seed(123)
+set.seed(1234)
 
 rawcounts <- read.table("Mouse_read_counts_heatmap_seekr.txt",sep="\t",header=TRUE)
 rownames(rawcounts) <- rawcounts[,1]
